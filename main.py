@@ -520,7 +520,7 @@ def onmessage(update,bot:ObigramClient):
                                    user_info['moodle_host'],
                                    user_info['moodle_repo_id'],
                                    proxy=proxy)
-           loged = client.login()
+            loged = client.login()
             if loged:
                 evfile = client.getEvidences()[findex]
                 client.deleteEvidence(evfile)
